@@ -3,9 +3,9 @@ import { DynamoDBClient, PutItemCommand } from "@aws-sdk/client-dynamodb"
 const ddbClient = new DynamoDBClient({ region: "us-east-1" })
 
 const params = {
-  TableName: "employee2",
+  TableName: "employee",
   Item: {
-    id: { N: "1" },
+    id: { S: "1" },
     emp_name: { S: "Hrcules" },
   },
 }
